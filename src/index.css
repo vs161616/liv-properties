@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.MainBg {
+  background-image: url(./assets/img/mainbg.jpeg);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  /* padding-top: 60px; */
+  background-attachment: fixed;
+}
+
+.MainBg .nav-link {
+  font-size: 14px;
+  color: #EDDFD0;
+}
+
+.CustomNav {
+  padding-top: 60px;
+}
+
+section.SectionTop {
+  height: 100vh;
+  position: relative;
+  padding-top: 250px;
+}
+
+.FeaturedSection {
+  height: 100vh;
+  position: relative;
+  padding-top: 250px;
+  padding-left: 200px;
+}
+
+header.MainHeader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 60px;
+  z-index: 99;
+}
+
+.TopBG {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  top: 20px;
+}
+
+h1.TitleFonts {
+  font-size: 85px;
+  color: #EDDFD0;
+  line-height: 80px;
+  font-weight: 700;
+}
+
+.TitleFeature {
+  font-size: 65px;
+  color: #EDDFD0;
+  line-height: 60px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.TabSection {
+  position: relative;
+  padding-top: 80px;
+}
+
+.TabSection .nav-link.active {
+  background: transparent !important;
+  border: none;
+  border-bottom: 3px solid #EDDFD0;
+  font-size: 14px;
+  color: #EDDFD0 !important;
+}
+
+.TabSection .nav-item {
+  min-width: 120px;
+}
+
+.TabSection button {
+  width: 100%;
+  text-align: left;
+}
+
+.TabSection .nav-tabs {
+  display: inline-flex;
+}
+
+.ProImg {
+  width: 100%;
+  height: 203px;
+}
+.ProImg img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.ProductBox {
+  width: 230px;
+}
+
+.ProDetails h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.ProDetails {
+  padding-top: 10px;
+  color: #EDDFD0;
+  padding-left: 10px;
+}
+
+.ProDetails p {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.Animate div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.Animate {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.ProPrice h2 {
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
