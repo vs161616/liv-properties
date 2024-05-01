@@ -31,38 +31,36 @@ code {
 }
 
 section.SectionTop {
-  height: 100vh;
   position: relative;
   padding-top: 250px;
 }
 
 .FeaturedSection {
-  height: 100vh;
-  position: relative;
-  padding-top: 250px;
-  padding-left: 200px;
+  /* height: 100vh; */
+    position: relative;
+    padding-top: 60px;
 }
 
 header.MainHeader {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   width: 100%;
-  top: 60px;
+  top: 40px;
   z-index: 99;
 }
 
 .TopBG {
   position: absolute;
-  bottom: 0;
-  left: 20px;
-  top: 20px;
+    bottom: -120px;
+    left: 20px;
+    right: 0;
 }
 
 h1.TitleFonts {
-  font-size: 85px;
+  font-size: 65px;
   color: #EDDFD0;
-  line-height: 80px;
+  line-height: 70px;
   font-weight: 700;
 }
 
@@ -74,8 +72,7 @@ h1.TitleFonts {
   letter-spacing: 3px;
 }
 .TabSection {
-  position: relative;
-  padding-top: 80px;
+  margin-top: 60px;
 }
 
 .TabSection .nav-link.active {
@@ -101,8 +98,10 @@ h1.TitleFonts {
 
 .ProImg {
   width: 100%;
-  height: 203px;
+  height: 293px;
+  position: relative;
 }
+
 .ProImg img {
   object-fit: cover;
   height: 100%;
@@ -110,7 +109,8 @@ h1.TitleFonts {
 }
 
 .ProductBox {
-  width: 230px;
+  width: 280px;
+    min-width: 280px;
 }
 
 .ProDetails h3 {
@@ -144,4 +144,267 @@ h1.TitleFonts {
   margin-top: 5px;
   margin-bottom: 0;
   font-weight: 700;
+}
+.ProImg a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  height: 100%;
+  background: rgb(0 0 0 / 70%);
+  color: #876C4A;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.TabFeatured {
+  position: relative;
+  /* padding-top: 80px; */
+}
+
+.TabFeatured .nav-link.active {
+  background: transparent !important;
+  border: none;
+  border-bottom: 3px solid #EDDFD0;
+  font-size: 14px;
+  color: #EDDFD0 !important;
+}
+
+.TabFeatured .nav-item {
+  min-width: 120px;
+}
+
+.TabFeatured button {
+  width: 100%;
+  text-align: center;
+}
+
+.TabFeatured .nav-tabs {
+  display: inline-flex;
+}
+.TitleAndTabs {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.TitleAndTabs p {
+  color: #EDDFD0;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.ServiceBox p {
+  font-size: 12px;
+  color: #EDDFD0;
+}
+.ServiceBox h4 {
+  font-size: 20px;
+  color: #EDDFD0;
+}
+
+.ServiceBox {
+  position: relative;
+}
+.ServiceBox:after {
+  content: '';
+  position: absolute;
+  right: 20px;
+  height: 100%;
+  width: 1px;
+  background: #EDDFD0;
+  top: 0;
+}
+
+.lastafter:after {
+  display: none;
+}
+
+.ServiceBox a {
+  font-size: 12px;
+  color: #EDDFD0;
+  margin-top: 10px;
+  display: block;
+}
+
+.ServiceSection {
+  /* height: 100vh; */
+  position: relative;
+  padding-top: 80px;
+  padding-left: 200px;
+}
+
+.BannerBottom {
+  position: relative;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+
+.Details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.InstaSection {
+  /* height: 100vh; */
+  position: relative;
+  padding-top: 80px;
+  /* padding-left: 200px; */
+}
+.Insafollow p {
+  font-size: 14px;
+  color: #EDDFD0;
+  font-weight: 500;
+}
+.Insafollow {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 15px;
+}
+
+.InstaImg img {
+  height: 100%;
+  object-fit: cover;
+}
+.InstaImg {
+  width: 2800px;
+  height: 300px;
+  position: relative;
+  min-width: 280px;
+}
+
+.InstaGrid {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.InstaImg.Expo a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  right: 0;
+  bottom: 0;
+  background: rgb(0 0 0 / 78%);
+  color: #876C4A;
+  font-size: 14px;
+}
+.Cloud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: url(./assets/img/8918181.png);
+  animation: animate 60s linear infinite;
+  background-size: contain;
+    opacity: 0.4;
+}
+@keyframes animate {
+    0% {
+      background-position: 0px;
+    }
+    100% {
+      background-position: -5440px;
+    }
+}
+
+.footdesign {
+  width: 100%;
+  background-image: url(./assets/img/fooerimg.jpeg);
+  background-size: cover;
+  background-color: rgb(0 0 0 / 25%);
+  background-blend-mode: color;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+}
+.footone h5 {
+  color: #EDDFD0;
+  font-size: 25px;
+  margin-top: 40px;
+}
+.footone p {
+  font-size: 25px;
+  color: #EDDFD0;
+}
+
+.FootMenus ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.FootMenus h6 {
+  font-size: 14px;
+  color: #EDDFD0;
+  text-transform: uppercase;
+}
+.FootMenus li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #EDDFD0;
+  line-height: 30px;
+}
+.FootAddress p {
+  margin: 0;
+  font-size: 14px;
+  color: #EDDFD0;
+}
+.FootSocial ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.FootAddress {
+  margin-top: 30px;
+  line-height: 30px;
+}
+.Newsletter input {
+  height: 52px;
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid #EDDFD0 !important;
+  border: none;
+}
+
+.Newsletter {
+  display: flex;
+  align-items: center;
+}
+
+.Newsletter button {
+  width: 121px;
+  height: 52px;
+  border-radius: 30px;
+  border: none;
+  background: #938270;
+  color: #EDDFD0;
+}
+.FooterBarBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #EDDFD0;
+  padding: 26px 0px;
+  border-top: 1px solid #EDDFD0;
 }

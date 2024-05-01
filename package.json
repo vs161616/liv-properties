@@ -1,7 +1,8 @@
 {
-  "name": "liv-properties",
+  "name": "routing",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/liv-properties",
   "dependencies": {
     "@ap.cx/react-fullpage": "^0.3.0",
     "@testing-library/jest-dom": "^5.17.0",
