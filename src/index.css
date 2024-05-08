@@ -1,14 +1,30 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "HelveticaNeueMedium" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url(./assets/fonts/gotham/Gotham-Bold.otf);
+}
+@font-face {
+  font-family: "Gotham-Light";
+  src: url(./assets/fonts/gotham/Gotham-Light.otf);
+}
+@font-face {
+  font-family: "HelveticaNeueMedium";
+  src: url(./assets/fonts/helvetica-neue-5/HelveticaNeueMedium.otf);
+}
+
+@font-face {
+  font-family: "HelveticaNeueLight";
+  src: url(./assets/fonts/helvetica-neue-5/HelveticaNeueLight.otf);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -23,7 +39,7 @@ code {
 
 .MainBg .nav-link {
   font-size: 14px;
-  color: #EDDFD0;
+  color: #eddfd0;
 }
 
 .CustomNav {
@@ -32,17 +48,30 @@ code {
 
 section.SectionTop {
   position: relative;
-  padding-top: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .FeaturedSection {
-  /* height: 100vh; */
-    position: relative;
-    padding-top: 60px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 60px;
+  background-image: url(./assets/img/mainbg.jpeg);
+  background-size: cover;
+  background-position: center;
+  /* padding-top: 60px; */
+  background-attachment: fixed;
 }
 
 header.MainHeader {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   width: 100%;
@@ -52,35 +81,39 @@ header.MainHeader {
 
 .TopBG {
   position: absolute;
-    bottom: -120px;
-    left: 20px;
-    right: 0;
+  bottom: -60px;
+  left: 20px;
+  right: 0;
 }
 
 h1.TitleFonts {
   font-size: 65px;
-  color: #EDDFD0;
+  color: #eddfd0;
   line-height: 70px;
   font-weight: 700;
+  font-family: "Gotham-Bold" !important;
 }
 
 .TitleFeature {
   font-size: 65px;
-  color: #EDDFD0;
+  color: #eddfd0;
   line-height: 60px;
   font-weight: 700;
   letter-spacing: 3px;
+  margin-bottom: 10px;
 }
 .TabSection {
   margin-top: 60px;
+    position: absolute;
+    bottom: 40px;
 }
 
 .TabSection .nav-link.active {
   background: transparent !important;
   border: none;
-  border-bottom: 3px solid #EDDFD0;
+  border-bottom: 3px solid #eddfd0;
   font-size: 14px;
-  color: #EDDFD0 !important;
+  color: #eddfd0 !important;
 }
 
 .TabSection .nav-item {
@@ -109,24 +142,32 @@ h1.TitleFonts {
 }
 
 .ProductBox {
-  width: 280px;
-    min-width: 280px;
+  width: 323px;
+  min-width: 323px;
 }
 
 .ProDetails h3 {
   font-size: 15px;
   margin-bottom: 5px;
+  font-family: "HelveticaNeueLight";
+  font-weight: 100;
+  letter-spacing: 2px;
 }
 
 .ProDetails {
   padding-top: 10px;
-  color: #EDDFD0;
+  color: #eddfd0;
   padding-left: 10px;
+  font-family: "HelveticaNeueLight";
+  font-weight: 100;
 }
 
 .ProDetails p {
   font-size: 12px;
   margin-bottom: 5px;
+  font-family: "HelveticaNeueLight";
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 
 .Animate div {
@@ -155,7 +196,7 @@ h1.TitleFonts {
   top: 0;
   height: 100%;
   background: rgb(0 0 0 / 70%);
-  color: #876C4A;
+  color: #876c4a;
   text-decoration: none;
   font-size: 14px;
 }
@@ -168,9 +209,9 @@ h1.TitleFonts {
 .TabFeatured .nav-link.active {
   background: transparent !important;
   border: none;
-  border-bottom: 3px solid #EDDFD0;
+  border-bottom: 3px solid #eddfd0;
   font-size: 14px;
-  color: #EDDFD0 !important;
+  color: #eddfd0 !important;
 }
 
 .TabFeatured .nav-item {
@@ -191,30 +232,34 @@ h1.TitleFonts {
   gap: 70px;
 }
 .TitleAndTabs p {
-  color: #EDDFD0;
-  font-size: 25px;
-  font-weight: 300;
+  color: #eddfd0;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: "Gotham-Light";
+    line-height: 30.13px;
 }
 
 .ServiceBox p {
   font-size: 12px;
-  color: #EDDFD0;
+  color: #eddfd0;
+  font-weight: 300;
+    font-family: "Gotham-Light";
 }
 .ServiceBox h4 {
   font-size: 20px;
-  color: #EDDFD0;
+  color: #eddfd0;
 }
 
 .ServiceBox {
   position: relative;
 }
 .ServiceBox:after {
-  content: '';
+  content: "";
   position: absolute;
   right: 20px;
   height: 100%;
   width: 1px;
-  background: #EDDFD0;
+  background: #eddfd0;
   top: 0;
 }
 
@@ -224,16 +269,24 @@ h1.TitleFonts {
 
 .ServiceBox a {
   font-size: 12px;
-  color: #EDDFD0;
+  color: #eddfd0;
   margin-top: 10px;
   display: block;
 }
 
 .ServiceSection {
-  /* height: 100vh; */
+  height: 100vh;
   position: relative;
-  padding-top: 80px;
-  padding-left: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 60px;
+  background-image: url(./assets/img/mainbg.jpeg);
+  background-size: cover;
+  background-position: center;
+  /* padding-top: 60px; */
+  background-attachment: fixed;
 }
 
 .BannerBottom {
@@ -257,12 +310,20 @@ h1.TitleFonts {
 .InstaSection {
   /* height: 100vh; */
   position: relative;
-  padding-top: 80px;
-  /* padding-left: 200px; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 60px;
+  background-image: url(./assets/img/mainbg.jpeg);
+  background-size: cover;
+  background-position: center;
+  /* padding-top: 60px; */
+  background-attachment: fixed;
 }
 .Insafollow p {
   font-size: 14px;
-  color: #EDDFD0;
+  color: #eddfd0;
   font-weight: 500;
 }
 .Insafollow {
@@ -299,7 +360,7 @@ h1.TitleFonts {
   right: 0;
   bottom: 0;
   background: rgb(0 0 0 / 78%);
-  color: #876C4A;
+  color: #876c4a;
   font-size: 14px;
 }
 .Cloud {
@@ -311,15 +372,15 @@ h1.TitleFonts {
   background: url(./assets/img/8918181.png);
   animation: animate 60s linear infinite;
   background-size: contain;
-    opacity: 0.4;
+  opacity: 0.4;
 }
 @keyframes animate {
-    0% {
-      background-position: 0px;
-    }
-    100% {
-      background-position: -5440px;
-    }
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: -5440px;
+  }
 }
 
 .footdesign {
@@ -336,13 +397,13 @@ h1.TitleFonts {
   height: 100%;
 }
 .footone h5 {
-  color: #EDDFD0;
+  color: #eddfd0;
   font-size: 25px;
   margin-top: 40px;
 }
 .footone p {
   font-size: 25px;
-  color: #EDDFD0;
+  color: #eddfd0;
 }
 
 .FootMenus ul {
@@ -352,19 +413,19 @@ h1.TitleFonts {
 }
 .FootMenus h6 {
   font-size: 14px;
-  color: #EDDFD0;
+  color: #eddfd0;
   text-transform: uppercase;
 }
 .FootMenus li a {
   text-decoration: none;
   font-size: 14px;
-  color: #EDDFD0;
+  color: #eddfd0;
   line-height: 30px;
 }
 .FootAddress p {
   margin: 0;
   font-size: 14px;
-  color: #EDDFD0;
+  color: #eddfd0;
 }
 .FootSocial ul {
   list-style: none;
@@ -383,7 +444,7 @@ h1.TitleFonts {
   height: 52px;
   width: 100%;
   background: transparent;
-  border-bottom: 1px solid #EDDFD0 !important;
+  border-bottom: 1px solid #eddfd0 !important;
   border: none;
 }
 
@@ -398,13 +459,42 @@ h1.TitleFonts {
   border-radius: 30px;
   border: none;
   background: #938270;
-  color: #EDDFD0;
+  color: #eddfd0;
 }
 .FooterBarBottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #EDDFD0;
+  color: #eddfd0;
   padding: 26px 0px;
-  border-top: 1px solid #EDDFD0;
+  border-top: 1px solid #eddfd0;
+}
+
+/* .TabSection .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border-color: transparent;
+} */
+
+.nav-link:focus, .nav-link:hover {
+  color: #eddfd0 !important;
+}
+
+.TabSection .nav-link:hover {
+  border-color: transparent;
+}
+
+.TabSection .navbar-nav a {
+  position: relative;
+}
+
+.TabSection .navbar-nav a:after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  height: 100%;
+  width: 1px;
+  background: #EDDFD0;
+  top: -1px;
+}
+.af-r:after {
+  display: none;
 }
