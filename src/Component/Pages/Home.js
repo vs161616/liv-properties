@@ -30,7 +30,7 @@ import img01 from "../../assets/img/img01.png";
 import img02 from "../../assets/img/img02.png";
 import img03 from "../../assets/img/img03.png";
 
-import { FullPage, Slide } from "react-full-page";
+import ReactPageScroller, { SectionContainer } from 'react-page-scroller';
 
 import { Link } from "react-router-dom";
 
@@ -38,14 +38,14 @@ const Home = () => {
   const [key, setKey] = useState("Ready");
   return (
     <>
-      <FullPage>
-        <Slide>
+      <div>
+        <ReactPageScroller>
           <section className="SectionTop">
             <Container className="position-relative z-1">
               <Row>
                 <Col lg={6}>
                   <h1 className="TitleFonts">
-                    Timeless <br></br> luxury <br></br> re-imagined{" "}
+                    Timeless <br></br> luxury <br></br> re-imagined
                   </h1>
                 </Col>
               </Row>
@@ -89,9 +89,7 @@ const Home = () => {
             </div>
             <div className="Cloud"></div>
           </section>
-        </Slide>
 
-        <Slide>
           <section className="FeaturedSection">
             <Container className="me-0">
               <Row>
@@ -241,8 +239,7 @@ const Home = () => {
               </Row>
             </Container>
           </section>
-        </Slide>
-        <Slide>
+
           <section className="ServiceSection">
             <Container className="me-0">
               <Row>
@@ -312,13 +309,14 @@ const Home = () => {
               </Row>
             </Container>
           </section>
-        </Slide>
 
-        <Slide>
+          
+          <SectionContainer height={100}>
+            <div className="CommenDiv">
           <section className="InstaSection">
             <Container className="me-0">
-              <Row>
-                <Col lg={12}>
+              <Row className="justify-content-end">
+                <Col lg={8}>
                   <div className="TitleAndTabs align-items-baseline flex-column gap-0 mb-4">
                     <h1 className="TitleFeature">Instagram</h1>
                     <div className="Insafollow">
@@ -483,8 +481,13 @@ const Home = () => {
               </Row>
             </Container>
           </footer>
-        </Slide>
-      </FullPage>
+          </div>
+          </SectionContainer>
+          
+        </ReactPageScroller>
+      </div>
+
+      
     </>
   );
 };
